@@ -1,0 +1,44 @@
+/* #circle{
+    height: 1500px;
+    width: 500px;
+    position: relative;
+    top: 10px;
+    bottom: 40px;
+    left: 130px;
+    background-color: pink;
+    margin-bottom: 100px;
+}
+.s-circle{
+    position: fixed;
+    background-color: green;
+    height: 100px;
+    width: 100px;
+    top: 100px;
+    left: 200px;
+}
+
+.small-circle{
+    position: absolute;
+    background-color: orangered;
+    height: 100px;
+    width: 100px
+}
+ */
+
+body{
+    height: 1900px;
+}
+ .box1{
+    position: relative;
+    height: 300px;
+    width: 300px;
+    margin: 30px;
+    background-color: bisque;
+ }
+
+ .box1 h1{
+    position: sticky;
+    top: 0px;
+    text-align: center;
+    background-color: cadetblue;
+ }

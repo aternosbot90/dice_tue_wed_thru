@@ -1,0 +1,27 @@
+#h1 h1{
+    color: red;
+    /* margin-top: 30px; */
+}
+
+#hello{
+    border: 3px solid black;
+    padding: 20px 10px 30px 40px;
+    border-radius: 20px;
+}
+
+ #h1 #h2 .head{
+    color: blue;
+}
+
+#h2{
+    background-color: aqua;
+}
+#h1{
+    height: 500px;
+    background-color: black;
+    color: aqua;
+}
+
+h1{
+    color: rgba(61, 188, 84);
+}

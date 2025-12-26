@@ -1,0 +1,23 @@
+h1{
+    display: inline-block;
+}
+h2{
+    display: inline-block;
+}
+
+.container{
+    display: flex;
+    flex-direction: row-reverse;
+    height: 500px;
+    background-color: aquamarine;
+    width: 500px;
+    gap: 10px;
+    justify-content: start;
+    flex-wrap: wrap;
+
+}
+.item{
+    height: 100px;
+    width: 100px;
+    background-color: red;
+}

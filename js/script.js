@@ -765,4 +765,351 @@
 //   return "minor";
 // }
 
+//
 
+// function multiply(a,b,multiply){
+//   return a*b*multiply;
+// }
+
+// let result = multiply(2,3,4)
+// console.log(result)
+
+// let sum =30;
+
+// function calculateAverage(numbers) {
+//     if (numbers.length === 0) return 0;
+
+//     let sum = 0;
+//     for (let i = 0; i < numbers.length; i++) {
+//         sum += numbers[i];
+//     }
+
+//     return sum / numbers.length;
+// }
+
+// // Usage
+// const values = [10, 20, 30, 40, 50];
+// const average = calculateAverage(values);
+// console.log(average); // Output: 30
+
+
+// let sum = 0;
+// function avg(...val){
+//   val.forEach((val)=>{
+//     sum+=val;
+//   })
+//   return sum/val.length
+// }
+
+// let average = avg(10,20,30,40,50);
+// console.log(average);
+
+
+// function bmi(weight,height){
+//   return weight/(height*height)
+// }
+
+// let cal = bmi(70,1.75)
+// console.log(cal.toFixed(2))
+
+// function discountCalculator(discount){
+//   return function(price){
+//     return price-price*discount/100
+//   }
+// }
+
+// let discounter = discountCalculator(10);
+// console.log(discounter(100));
+
+// let discounter2 = discountCalculator(20);
+// console.log(discounter2(100));
+
+
+// for(let i = 2; i<=50; i++){
+//     let isprime = true;
+//     for(let j = 2; j<i; j++){
+//         if(i%j === 0){
+//             isprime = false;
+//             break;
+//         }
+//     }
+//     if(isprime){
+//         console.log(i);
+//     }
+// }
+
+// let n = 5;
+// for(let i = n; i>=1; i--){
+//      let row = "";
+//      for(let j = 1; j<=i; j++){
+//       row+="* ";
+//      }
+
+//      console.log(row);
+// }
+
+
+// Array
+
+// let arr = [5,10,20,13,12,"hello",90]
+// arr[5] = 87
+// console.log(arr[5]);
+
+
+// Array methods:- push,pop,shift,unshift,splice,slice,reverse,sort
+
+// //1.push
+// let arr = [1,3,4,5,6]
+// arr.push(10,12,34)
+// console.log(arr);
+
+// //2.pop
+// let arr2 = [1,3,4,5,6]
+// arr2.pop()
+// console.log(arr2);
+
+// //3.shift
+// let arr3 = [1,3,4,5,6]
+// arr3.shift()
+// console.log(arr3);
+
+// //4.unshift
+// let arr4 = [1,3,4,5,6]
+// arr4.unshift(10,12,45)
+// console.log(arr4);
+
+// //5.splice
+// let arr5 = [1,3,4,5,6]
+// arr5.splice(3,0,10,11)
+// console.log(arr5);
+
+// //now in splice the number will be removed in the array where in .splice(2,1) the 2 indicates from which index and the 1 indicates how many number to remove from the index 2 and forward
+
+// //if we write (2,2) then i would have removed the 4 and 5 number in array
+
+// //6.slice
+// let arr6 = [1,3,4,5,6]
+// let arr7 = arr6.slice(1,4)
+// console.log(arr6);
+// console.log(arr7);
+
+// // so in this it will take form 1 index and the 4 indicates the number of array to be in it we will take one less from unit which means 3 so the output we will get is [3,4,5]
+
+//7.reverse
+// let arr8 = [1,3,4,5,6]
+// arr8.reverse()
+// console.log(arr8);
+
+// //8.sort
+
+// let arr9 = [18,13,24,54,16]
+// arr9.sort(function(a,b){
+//   return b-a   //descending
+//   return a-b  //ascending
+// })
+// console.log(arr9);
+
+// let arr10 = ["ziya","kiri","queen","alice","giuvana"]
+// arr10.sort().reverse()
+// console.log(arr10);
+
+// //9.Map
+
+// let arr11 = [1,2,3,4,5]
+// // arr11.forEach(function(val){
+// //   console.log(val*5);
+// // })
+
+// let arr12 = arr11.map(function(val){
+//   if(val%2===0){
+//     return val;
+//   }
+//   else{
+//     return "odd number " + val
+//   }
+// })
+
+// console.log(arr12);
+
+// //10.filter
+
+// let arr13 = [18,13,24,54,16];
+// let arr14 = arr13.filter(function(val){
+//         if(val%2===0){
+//           return true
+//         }
+// })
+
+// console.log(arr14);
+
+// //11.reduce
+// let arr15 = [18,13,24,54,16];
+
+// let arr16 = arr15.reduce(function(acc,val){
+//   return acc+val;
+// },0)
+
+// console.log(arr16);
+
+// //12.find
+
+// let arr17 = [18,13,24,54,16]
+// let arr18 = arr17.find(function(val){
+//      return val === 18
+// })
+
+// console.log(arr18);
+
+// //13.some
+
+// let arr19 = [18,13,24,54,16]
+// let some = arr19.some(function(val){
+//       return val>50
+// })
+
+// console.log(some);
+
+// //14.every
+
+// let arr20 = [18,13,24,54,16]
+// let every = arr20.every(function(val){
+//   return val>10
+// })
+
+// console.log(every);
+
+// //Destructing, spread operator
+
+// let arr = [1,2,3,4,5];
+// let [a,b,,c,...rest] = arr  //destructuring
+// console.log(a,b); 
+// console.log(a,b,c,rest);
+
+// let arr2 = [18,13,24,54,16];
+// let arr3 = [...arr2] //spread operator
+// arr3.pop()
+// console.log(arr3);
+// console.log(arr2);
+
+
+// let color = ["green","yellow"]
+// color.splice(1,0,"red","blue")
+// console.log(color);
+
+//objects:-
+
+// let user = {
+//   Name: "kunal",
+//   Age: 25,
+//   country: "India",
+//   location: {
+//      city: "delhi",
+//      pincode: 110001
+//   }
+// }
+
+// console.log(user.location.city);
+// console.log(user.location.pincode);
+
+//destructure obj
+// let user = {
+//   Name: "kunal",
+//   Age: 25,
+//   country: "India",
+//   location: {
+//     city: "delhi",
+//     pincode: 110001,
+//     lat: 28.7041,
+//     lng: 77.1025
+//   }
+// }
+
+// let {lat, lng} = user.location;
+
+// console.log(lat.toFixed(2));
+// console.log(lng.toFixed(2));
+
+//for in loop
+// let obj = {
+//   name: "kunal",
+//   age: 25,
+//   city: "delhi",
+//   pincode: 110001,
+// }
+
+// for(let tey1 in obj){
+//   console.log(tey1+" : "+obj[tey1]);
+// }
+
+// let obj = {
+//   name: "kunal",
+//   age: 25,
+//   city: "delhi",
+//   pincode: 110001,
+// }
+
+// //keys
+// let key = Object.keys(obj)
+// console.log(key);
+
+// //values
+// let value = Object.values(obj)
+// console.log(value);
+
+// //entries
+// let entries = Object.entries(obj)
+// console.log(entries);
+// console.log(entries[0][1]);
+
+// //spread operator
+// let obj = {
+//   name: "kunal",
+//   age: 25,
+//   city: "delhi",
+//   pincode: 110001,
+// }
+
+// let obj2 = {...obj}
+
+// obj2.name = 'udey'
+// console.log(obj2);
+// console.log(obj);
+
+// //assign
+// let obj = {
+//   name: "kunal",
+//   age: 25,
+//   city: "delhi",
+//   pincode: 110001,
+// }
+
+// let obj2 = Object.assign({country:'india',email: "kunal@gmail.com"}, obj)
+
+// console.log(obj2);
+// console.log(obj);
+
+
+//deep clone
+// let obj = {
+//   name: "kunal",
+//   age: 25,
+//   city: "delhi",
+//   pincode: 110001,
+//   location:{
+//     lat: 28.7041,
+//     lng: 77.1025,
+//     address:{
+//       street: "123 main st",
+//       city: "delhi",
+//       state: "delhi",
+//       country: "india"
+//     }
+//   }
+// }
+
+// let obj2 = JSON.parse(JSON.stringify(obj));
+
+// obj2.location.lat = 29.00
+// obj2.location.address.street = "456 main st"
+// console.log(obj2.location.address.street);
+// console.log(obj.location.address.street);

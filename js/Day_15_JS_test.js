@@ -137,18 +137,18 @@
 //     }
 // 
 
-// for(let i = 2; i<=50; i++){
-//     let isprime = true;
-//     for(let j = 2; j<i; j++){
-//         if(i%j === 0){
-//             isprime = false;
-//             break;
-//         }
-//     }
-//     if(isprime){
-//         console.log(i);
-//     }
-// }
+for(let i = 2; i<=50; i++){
+    let isprime = true;
+    for(let j = 2; j<i; j++){
+        if(i%j === 0){
+            isprime = false;
+            break;
+        }
+    }
+    if(isprime){
+        console.log(i);
+    }
+}
 
 // 12. Write a nested for loop to print a right-angle triangle pattern.
 //Solution:-
@@ -191,3 +191,6 @@
 //     num = Math.floor(num/10);
 // }
 // console.log("Total digit are : " + count);
+   
+
+// marks:- 12/20

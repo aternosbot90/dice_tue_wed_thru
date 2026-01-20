@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Email & Password Validator</title>
+  <link rel="stylesheet" href="../css/emailValidator.css">
+</head>
+<body>
+    <div class="bg">
+   <div class="container">
+    <h2> Login Form </h2>
+    <form id="loginForm">
+      <!-- Email -->
+      <div class="form-group">
+        <label for="email">Email:</label>
+        <input autocomplete="off" type="text" id="email" placeholder="Enter your email">
+        <small style="color: red;" class="error" id="emailError"></small>
+      </div>
+
+      <!-- Password -->
+      <div class="form-group">
+        <label for="password">Password:</label>
+        <input autocomplete="on" type="password" id="password" placeholder="Enter your password">
+        <small style="color: red;" class="error" id="passwordError"></small>
+      </div>
+
+      <button type="submit" class="button">Login</button>
+    </form>
+    <div id="resultMessage"></div>
+  </div>
+
+  <button class="dbutton">
+    toggle dark mode
+  </button>
+    </div>
+  <!-- Your JS file will be added later -->
+  <script src="../js/emailValidator.js"></script>
+</body>
+</html>

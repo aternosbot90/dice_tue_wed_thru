@@ -40,7 +40,7 @@ main.appendChild(container)
 
 input.forEach((inp)=>{
    if(inp.type == 'text'){
-    inp.value = " "
+    inp.value = ""
    } 
  })
 

@@ -46,7 +46,7 @@ body {
     /* Search Bar */
     #search-box {
       position: fixed;
-      top: 140px;
+      top: 120px;
       right: 42%;
       width: 220px; /* Tailwind didn't set width; keep layout */
       padding: 20px; /* px-5 py-5 => 1.25rem => 20px on all sides */
@@ -55,7 +55,6 @@ body {
       outline: none; /* outline-none */
       background: #111; /* bg-[#111] */
       color: #888; /* text-[#888] */
-      margin-bottom: 0;
       margin-left: 42%; /* spacing handled by .page gap */
       margin-bottom: 10px;
       font-size: 14px;

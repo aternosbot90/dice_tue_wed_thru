@@ -32,11 +32,10 @@ form.addEventListener("submit", function(dets){
         error[1].style.display = "initial";
         isValid = false;
     }
-
+     
     if(isValid){
         document.querySelector("#resultMessage").textContent = "Form submitted successfully!";
     }
-
 });
 
 button.addEventListener("click", function(){
